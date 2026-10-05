@@ -147,3 +147,28 @@ body{background:var(--ivory)}
 .piton-ribbon small{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.8rem;font-style:italic;color:#937a50;letter-spacing:0;margin-bottom:4px}
 .destination-note{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-style:italic;color:#8c774e}
 @media(max-width:700px){.piton-ribbon .wrap{grid-template-columns:1fr 1fr}.piton-ribbon a:nth-child(3){border-left:1px solid rgba(23,52,47,.1)}}
+
+/* SETMORE BOOKING PICKER */
+.setmore-picker{margin:8px 0 28px;padding:24px;background:#f1ece2;border:1px solid rgba(23,52,47,.12)}
+.setmore-picker h3{font-size:2rem;margin:4px 0 8px}
+.setmore-note{max-width:620px;color:var(--muted);margin-bottom:18px}
+.setmore-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.setmore-card{display:flex;justify-content:space-between;gap:18px;align-items:center;background:#fffdf9;border:1px solid rgba(23,52,47,.12);padding:16px;transition:.2s}
+.setmore-card.featured{outline:2px solid #77c4ad;box-shadow:0 12px 30px rgba(20,58,51,.08)}
+.setmore-card small{font-size:.58rem;letter-spacing:.12em;font-weight:800;color:#68837d}
+.setmore-card h4{font-family:var(--display);font-size:1.05rem;line-height:1.1;margin:4px 0 0}
+.setmore-actions{display:flex;gap:7px;flex-shrink:0}
+.setmore-actions a{min-width:88px;background:#0b2824;color:#fff;padding:10px 11px;text-align:center;transition:.2s}
+.setmore-actions a:hover{transform:translateY(-2px);background:#17483e}
+.setmore-actions span,.setmore-actions strong{display:block}
+.setmore-actions span{font-family:var(--display);font-size:.55rem;letter-spacing:.08em;color:#bcd7cf}
+.setmore-actions strong{font-size:.92rem;margin-top:2px}
+.concierge-toggle{margin-top:14px;border:0;background:transparent;padding:0;font-weight:800;color:#0b2824;text-decoration:underline;cursor:pointer}
+.setmore-foot{font-size:.78rem;color:var(--muted);margin:5px 0 0}
+#bookingForm[hidden]{display:none}
+@media(max-width:700px){
+ .setmore-grid{grid-template-columns:1fr}
+ .setmore-card{display:block}
+ .setmore-actions{margin-top:12px}
+ .setmore-actions a{flex:1}
+}
